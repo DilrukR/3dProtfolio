@@ -46,7 +46,7 @@ const Scene = () => {
   return (
     <div className='w-screen h-screen'>
       <Canvas gl={{ preserveDrawingBuffer: true }}>
-        <ScrollControls pages={5}>
+        <ScrollControls pages={5} damping={1} maxSpeed={0.1}>
           <SheetProvider sheet={sheet}>
             <Seen />
           </SheetProvider>
