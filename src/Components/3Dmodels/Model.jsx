@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 const actionNames = ["The Life"];
 
 const FantasyBook = () => {
-  const model = useGLTF("/public/fantasyBook/medieval_fantasy_book.glb");
+  const model = useGLTF("../../../public/fantasyBook/fantasyBookModded-v1.glb");
 
   const animations = useAnimations(model.animations, model.scene);
 
